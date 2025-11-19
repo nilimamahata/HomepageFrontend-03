@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./About2.css";
+import "../css/About2.css";
 
 const Mission = () => {
   return (

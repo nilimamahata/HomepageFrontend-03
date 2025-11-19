@@ -1,4 +1,4 @@
-import './MainGrid.css';
+import '../css/MainGrid.css';
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 
@@ -33,8 +33,6 @@ const MainGrid = () => {
     { title: "Class 12 MBSE", description: "Complete board exam preparation" },
     { title: "Advance Learning", description: "Specialized courses for higher studies" },
     { title: "Career Counseling", description: "Guidance for future career paths" },
-    { title: "Digital Skills", description: "Computer literacy and programming" },
-    { title: "Language Learning", description: "English and foreign language courses" },
     { title: "Skill Development", description: "Vocational training programs" }
   ];
 
@@ -55,10 +53,10 @@ const MainGrid = () => {
       {/* Right Column - Rolling Notifications and Buttons */}
       <div className="right-column">
         {/* Login and Signup Buttons */}
-        <div className="auth-buttons">
+       {/* <div className="auth-buttons">
           <button className="login-btn">Login</button>
           <button className="signup-btn">Signup</button>
-        </div>
+        </div> */}
 
         {/* Rolling Notification Panel */}
         <div className="notification-panel">
@@ -74,21 +72,21 @@ const MainGrid = () => {
           </div>
         </div>
 
-        {/* Connect Box */}
-        <div className="connect-box">
+       {/* Connect Box */}
+       {/*  <div className="connect-box">
           <h3>Connect with Shiksha</h3>
           <ul>
             <li><a href="#">Ask Doubts</a></li>
             <li><a href="#">Join Live Chat</a></li>
             <li><a href="#">Download App</a></li>
-          </ul>
+          </ul> */}
           {/* Social Media */}
-          <div className="social-media">
+        {/*   <div className="social-media">
             <a href="https://www.facebook.com/profile.php?id=61580053190184" className="social-icon" aria-label="Facebook"><FaFacebookF /></a>
             <a href="https://www.instagram.com/shikshacom/" className="social-icon" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://www.youtube.com/@Shikshacom-edu" className="social-icon" aria-label="YouTube"><FaYoutube /></a>
           </div>
-        </div>
+        </div> */}
 
         {/* Achievers Feed */}
        {/* <div className="achievers-feed">

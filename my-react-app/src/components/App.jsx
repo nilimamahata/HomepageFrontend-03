@@ -11,8 +11,11 @@ import Vision from './Vision'
 import Mission from './Mission'
 import Values from './Values'
 import WhySiksha from './WhySiksha'
-import './App.css'
+import '../css/App.css'
 import Contact from './Contact'
+import ExploreServices from './ExploreServices'
+import CurrentAffairs from './CurrentAffairs'
+import Upcoming from './Upcoming'
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
             <LandingHeader />
             <MainGrid />
             <LowerGrid />
+            <ExploreServices />
             <Feedback/>
             <Footer />
           </div>
@@ -71,6 +75,14 @@ function App() {
             <Footer />
           </div>
         } />
+        <Route path="/current-affairs" element={
+          <div className="page-content">
+            <Navbar />
+            <CurrentAffairs />
+            <Footer />
+          </div>
+        } />
+      <Route path="/upcoming" element={<Upcoming />} />
       </Routes>
     </div>
   )

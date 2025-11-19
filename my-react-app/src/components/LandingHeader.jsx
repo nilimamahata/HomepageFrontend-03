@@ -1,4 +1,4 @@
-import './LandingHeader.css';
+import '../css/LandingHeader.css';
 
 const LandingHeader = () => {
   return (
@@ -10,8 +10,13 @@ const LandingHeader = () => {
           className="search-bar"
         />
       </div>
-      <div className="header-icons">
-        {/*<button className="icon-btn" aria-label="Accessibility">
+      {/* Login and Signup Buttons */}
+      <div className="auth-buttons">
+          <button className="login-btn">Login</button>
+          <button className="signup-btn">Signup</button>
+      </div>
+      {/*<div className="header-icons">
+        <button className="icon-btn" aria-label="Accessibility">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="3"></circle>
             <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1m16.24-3.76l-4.24 4.24m-6-6L2.76 6.24m16.24 11.52l-4.24-4.24m-6 6L2.76 17.76"></path>
@@ -35,8 +40,8 @@ const LandingHeader = () => {
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
-        </button>*/}
-      </div>
+        </button>
+      </div>*/}
     </div>
   );
 };

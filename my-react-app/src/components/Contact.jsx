@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import email_icon from './assets/envelope.svg'
-import location_icon from './assets/location.svg'
-import phone_icon from './assets/phone_icon.svg'
+import email_icon from '../assets/envelope.svg'
+import location_icon from '../assets/location.svg'
+import phone_icon from '../assets/phone_icon.svg'
 
-import "./Contact.css";
+import "../css/Contact.css";
 
 const Contact = () => {
   return (

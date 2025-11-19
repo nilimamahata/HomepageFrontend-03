@@ -1,18 +1,114 @@
-# React + Vite
+# Shiksha Homepage Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This is the frontend application for Shiksha, an educational platform designed to connect teachers, students, and educational resources. Built with React and Vite, it provides a responsive and modern homepage with various sections including landing, about, vision, mission, values, services, contact, current affairs, and upcoming features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Homepage**: Includes landing header, main grid showcasing key offerings, lower grid, explore services section, user feedback, and footer.
+- **About**: Detailed information about the platform in multiple sections.
+- **Vision, Mission, Values**: Pages outlining the core philosophy and principles of Shiksha.
+- **Why Shiksha**: Highlights the benefits and reasons to choose the platform.
+- **Contact**: Interactive contact form integrated with EmailJS for sending messages.
+- **Current Affairs**: Section for news, updates, or relevant educational content.
+- **Upcoming**: Roadmap displaying planned features and developments.
+- **Authentication**: Login and Signup pages for user access.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Technologies Used
 
-Note: This will impact Vite dev & build performances.
+- **React 19**: For building the user interface.
+- **Vite**: Fast build tool and development server.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **React Router DOM**: For client-side routing.
+- **EmailJS**: For handling contact form submissions.
+- **React Icons**: For icons throughout the application.
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd HomepageFrontend-02/my-react-app
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+   ```
+   npm run dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:5173` (default Vite port).
+
+3. Navigate through the application using the navbar or by directly accessing routes:
+   - `/` : Home page
+   - `/about` : About Shiksha
+   - `/vision` : Our Vision
+   - `/mission` : Our Mission
+   - `/values` : Our Values
+   - `/why-shiksha` : Why Choose Shiksha
+   - `/contact` : Contact Us
+   - `/current-affairs` : Current Affairs
+   - `/upcoming` : Upcoming Features
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable React components
+│   ├── App.jsx         # Main application component with routing
+│   ├── Navbar.jsx      # Navigation bar
+│   ├── Footer.jsx      # Footer component
+│   ├── LandingHeader.jsx
+│   ├── MainGrid.jsx
+│   ├── LowerGrid.jsx
+│   ├── ExploreServices.jsx
+│   ├── Feedback.jsx
+│   ├── About.jsx
+│   ├── About2.jsx
+│   ├── Vision.jsx
+│   ├── Mission.jsx
+│   ├── Values.jsx
+│   ├── WhySiksha.jsx
+│   ├── Contact.jsx
+│   ├── CurrentAffairs.jsx
+│   └── Upcoming.jsx
+├── auth/               # Authentication-related components
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   ├── Login.css
+│   └── Signup.css
+├── css/                # Custom CSS stylesheets
+├── assets/             # Images, icons, and other static assets
+└── main.jsx            # Application entry point
+```
+
+## Scripts
+
+- `npm run dev` : Starts the development server with hot reloading.
+- `npm run build` : Builds the application for production.
+- `npm run lint` : Runs ESLint to check for code quality issues.
+- `npm run preview` : Previews the production build locally.
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new feature branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.

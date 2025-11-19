@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import "./Feedback.css";
+import "../css/Feedback.css";
 
 const Feedback = () => {
   const [formData, setFormData] = useState({

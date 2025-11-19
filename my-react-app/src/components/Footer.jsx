@@ -1,4 +1,4 @@
-import './Footer.css';
+import '../css/Footer.css';
 import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content">
         {/* Branding Section */}
         <div className="footer-branding">
-          <h2>Shiksha</h2>
+          <h2>ShikshaCom</h2>
           <p>Empowerment through Education</p>
           <div className="footer-info-block">
             <div className="footer-info-column">

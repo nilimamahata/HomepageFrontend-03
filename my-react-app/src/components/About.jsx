@@ -1,10 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
-import "./About.css";
-import arrowRight from "./assets/arrow_right.svg";
-import arrowLeft from "./assets/arrow_left.svg";
-import shikshaImg from "./assets/Shiksha.png";
-import teamImg from "./assets/Shiksha.png";
-import courseImg from "./assets/Shiksha.png";
+import "../css/About.css";
+import arrowRight from "../assets/arrow_right.svg";
+import arrowLeft from "../assets/arrow_left.svg";
+import shikshaImg from "../assets/Shiksha.png";
+import teamImg from "../assets/Shiksha.png";
+import courseImg from "../assets/Shiksha.png";
 
 const About = () => {
   const trackRef = useRef(null); // viewport

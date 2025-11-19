@@ -1,9 +1,5 @@
-# TODO: Update Landing Page Design
+# TODO for Making Tabs Clickable Buttons in ExploreServices
 
-## Tasks
-- [x] Modify MainGrid.jsx to implement 8-card grid (4 cards per row, 2 rows) on the left side
-- [x] Add rolling notification panel on the right side
-- [x] Include login and signup buttons in the right panel
-- [x] Update MainGrid.css to style the new layout with proper grid structure
-- [x] Implement infinite upward rolling notifications without reset
-- [ ] Test the updated design for responsiveness and functionality
+- [x] Update ExploreServices.jsx: Change div.tab to button.tab, div.sub-tab to button.sub-tab, add title="Upcoming feature" to non-Online buttons, remove alert from handleMainTabClick
+- [x] Update ExploreServices.css: Add hover styles for .tab and .sub-tab buttons
+- [ ] Test the changes by running the app to ensure tabs behave as expected

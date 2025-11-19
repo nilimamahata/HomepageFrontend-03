@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import '../css/Navbar.css';
 
 const Navbar = () => {
-  {/*const [contrast, setContrast] = useState(false);
+  const [contrast, setContrast] = useState(false);
   const [fontSize, setFontSize] = useState(1);
   const [language, setLanguage] = useState('EN');
 
@@ -24,12 +25,12 @@ const Navbar = () => {
 
   const switchLanguage = () => {
     setLanguage(language === 'EN' ? 'हिंदी' : 'EN');
-  }; */}
+  }; 
 
   return (
     <>
       {/* Top Slim Strip */}
-     {/* <div className="top-strip">
+      <div className="top-strip">
         <div className="strip-text">
         </div>
         <div className="strip-controls">
@@ -48,7 +49,7 @@ const Navbar = () => {
             {language}
           </button>
         </div>
-      </div> */} 
+      </div> 
 
       {/* Main Header */}
       <header className="main-header">
@@ -63,16 +64,15 @@ const Navbar = () => {
           <img src="/Shiksha.png" alt="Shiksha Logo" className="logo" />
           <div className="title">
             <h1>ShikshaCom</h1>
+            <p>Empowerment Through Education</p>
           </div>
           </Link>
         </div>
-       {/* <div className="header-right">
-          <span className="badge">Student Dashboard</span>
-          <span className="badge">Teacher Dashboard</span>
-          <span className="badge">Advance Teachings</span>
-          <span className="badge">Career Councelling</span>
-          <span className="badge">Digital India</span>
-        </div> */} 
+        <div className="header-right">
+            <a href="https://www.facebook.com/profile.php?id=61580053190184" className="social-icon" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/shikshacom/" className="social-icon" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.youtube.com/@Shikshacom-edu" className="social-icon" aria-label="YouTube"><FaYoutube /></a>
+        </div> 
       </header>
 
       {/* Navigation Bar */}
@@ -94,49 +94,65 @@ const Navbar = () => {
             <a href="#registration">Registration</a>
             <ul className="dropdown-menu">
               <li><a href="#students">Students</a></li>
-              <li><a href="#teachers">Teachers</a></li>
-              <li><a href="#experts">Experts</a></li>
+              <li><a href="/upcoming">Teachers</a></li>
+              <li><a href="/upcoming">Experts</a></li>
             </ul> 
           </li>
           <li className="nav-item dropdown">
             <a href="/services">Services</a>
             <ul className="dropdown-menu">
-              <li><a href="#school-L1">School-L1</a></li>
-              <li><a href="#school-L2">School-L2</a></li>
-              <li><a href="#advance-learning">Advance Learning</a></li>
+              <li><a href="#online">Online</a></li>
+              <li><a href="#offline">Offline</a></li>
+              <li><a href="#classroom">Classroom</a></li>
               <li><a href="#software-devlopment">Software Development</a></li>
             </ul> 
           </li>
           <li className="nav-item dropdown">
+            <a href="#genral-studies">General Studies</a>
+            <ul className="dropdown-menu">
+              <li><a href="/current-affairs">Current Affairs</a></li>
+            </ul> 
+          </li> 
+          {/*<li className="nav-item dropdown">
             <a href="#councelling">Councelling</a>
              <ul className="dropdown-menu">
               <li><a href="#career">Career Councelling</a></li>
               <li><a href="#admission-in-india">Admission in India</a></li>
               <li><a href="#admission-in-abroad">Admission in Abroad</a></li>
             </ul> 
+          </li>*/}
+           <li className="nav-item">
+            <span className="locked-link">
+              Counselling <span className="lock-icon">🔒</span>
+            </span>
           </li>
           <li className="nav-item">
-            <Link to="/forum">Forum</Link>
+            <span className="locked-link">
+              Forum <span className="lock-icon">🔒</span>
+            </span>
           </li>
           <li className="nav-item">
-            <a href="#reddit-ref">Reddit-Ref</a>
+            <span className="locked-link">
+              Reddit-Ref <span className="lock-icon">🔒</span>
+            </span>
           </li>
-          <li className="nav-item">
-            <a href="#placements">Placements</a>
-          </li>
-          <li className="nav-item dropdown">
+          {/*} <li className="nav-item dropdown">
             <a href="#training">Training</a>
              <ul className="dropdown-menu">
               <li><a href="#industrial">Industrial</a></li>
               <li><a href="#specialized">Specialized</a></li>
             </ul> 
-          </li>
-          <li className="nav-item dropdown">
-            <a href="#genral-studies">General Studies</a>
-            <ul className="dropdown-menu">
-              <li><a href="#current-affairs">Current Affairs</a></li>
-            </ul> 
-          </li>          
+          </li> */}
+          <li className="nav-item">
+            <span className="locked-link">
+              Training <span className="lock-icon">🔒</span>
+            </span>
+          </li>             
+          <li className="nav-item">
+            <span className="locked-link">
+              Placements <span className="lock-icon">🔒</span>
+            </span>
+          </li>     
           <li className="nav-item">
             <a href="/contact">Contact</a>
           </li>
