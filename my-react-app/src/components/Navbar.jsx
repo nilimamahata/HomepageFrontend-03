@@ -99,7 +99,7 @@ const Navbar = () => {
             </ul> 
           </li>
           <li className="nav-item dropdown">
-            <a href="/services">Services</a>
+            <a href="/courses">Services</a>
             <ul className="dropdown-menu">
               <li><a href="#online">Online</a></li>
               <li><a href="#offline">Offline</a></li>

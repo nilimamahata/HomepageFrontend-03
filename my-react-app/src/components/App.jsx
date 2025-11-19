@@ -16,6 +16,7 @@ import Contact from './Contact'
 import ExploreServices from './ExploreServices'
 import CurrentAffairs from './CurrentAffairs'
 import Upcoming from './Upcoming'
+import Courses from './Courses'
 
 function App() {
   return (
@@ -79,6 +80,13 @@ function App() {
           <div className="page-content">
             <Navbar />
             <CurrentAffairs />
+            <Footer />
+          </div>
+        } />
+        <Route path="/courses" element={
+          <div className="page-content">
+            <Navbar />
+            <Courses />
             <Footer />
           </div>
         } />

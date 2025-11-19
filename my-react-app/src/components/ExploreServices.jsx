@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../css/ExploreServices.css';
 
 const ExploreServices = () => {
+  const navigate = useNavigate();
   const [selectedMainTab, setSelectedMainTab] = useState('Offline');
   const [selectedSubTab, setSelectedSubTab] = useState('Class 9');
 
@@ -54,7 +56,7 @@ const ExploreServices = () => {
           ))}
         </div>
 
-        <button className="show-all-button">Show all services</button>
+        <button className="show-all-button" onClick={() => navigate('/courses')}>Show all services</button>
       </div>
     </div>
   );

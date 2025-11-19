@@ -1,5 +1,7 @@
-# TODO for Making Tabs Clickable Buttons in ExploreServices
+# Courses Page Implementation TODO
 
-- [x] Update ExploreServices.jsx: Change div.tab to button.tab, div.sub-tab to button.sub-tab, add title="Upcoming feature" to non-Online buttons, remove alert from handleMainTabClick
-- [x] Update ExploreServices.css: Add hover styles for .tab and .sub-tab buttons
-- [ ] Test the changes by running the app to ensure tabs behave as expected
+- [x] Create Courses.jsx component with detailed subjects for classes 8-12, including streams for 11-12
+- [x] Create Courses.css for styling the courses page
+- [x] Edit App.jsx to add new "/courses" route with Navbar, Courses, and Footer
+- [x] Edit ExploreServices.jsx to add navigation from "Show all services" button to "/courses"
+- [x] Test navigation and page display
