@@ -6,8 +6,8 @@ const Courses = () => {
   const [selectedStream, setSelectedStream] = useState(null);
 
   const subjectsData = {
-    'Class 8': ['Science', 'Social Science', 'Maths', 'English', 'GK', 'IT'],
-    'Class 9': ['Science', 'Social Science', 'Maths', 'English', 'GK'],
+    'Class 8': ['Science', 'Social Science', 'Maths', 'English', 'GK', 'IT','MIL'],
+    'Class 9': ['Science', 'Social Science', 'Maths', 'English', 'GK', 'MIL'],
     'Class 10': ['Science', 'Social Science', 'Maths', 'English', 'MIL'],
     'Class 11': {
       'Science': ['Physics', 'Chemistry', 'Biology', 'Maths', 'English'],

@@ -8,8 +8,8 @@ const ExploreServices = () => {
   const [selectedSubTab, setSelectedSubTab] = useState('Class 9');
 
   const subjects = {
-    'Class 8': ['Science', 'Social Science', 'Maths', 'English', 'GK', 'IT'],
-    'Class 9': ['Science', 'Social Science', 'Maths', 'English', 'GK',],
+    'Class 8': ['Science', 'Social Science', 'Maths', 'English', 'GK', 'IT','MIL'],
+    'Class 9': ['Science', 'Social Science', 'Maths', 'English', 'GK','MIL'],
     'Class 10': ['Science', 'Social Science', 'Maths', 'English', 'MIL'],
     'Class 11': ['11 Science', '11 Arts', '11 Commerce'],
     'Class 12': ['12 Science', '12 Arts', '12 Commerce'],
