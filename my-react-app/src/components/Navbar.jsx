@@ -8,10 +8,10 @@ const Navbar = () => {
   const [fontSize, setFontSize] = useState(1);
   const [language, setLanguage] = useState('EN');
 
-  const toggleContrast = () => {
+{/*const toggleContrast = () => {
     setContrast(!contrast);
     document.body.classList.toggle('high-contrast');
-  };
+  };*/}
 
   const increaseFont = () => {
     setFontSize(prev => Math.min(prev + 0.1, 1.5));
@@ -34,11 +34,11 @@ const Navbar = () => {
         <div className="strip-text">
         </div>
         <div className="strip-controls">
-          <button onClick={toggleContrast} className="accessibility-btn" aria-label="Toggle contrast">
+      {/*   <button onClick={toggleContrast} className="accessibility-btn" aria-label="Toggle contrast">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
             </svg>
-          </button>
+          </button>*/}
           <button onClick={decreaseFont} className="accessibility-btn" aria-label="Decrease font size">
             A-
           </button>

@@ -17,6 +17,8 @@ import ExploreServices from './ExploreServices'
 import CurrentAffairs from './CurrentAffairs'
 import Upcoming from './Upcoming'
 import Courses from './Courses'
+import Login from '../auth/Login'
+import Signup from '../auth/Signup'
 
 function App() {
   return (
@@ -90,7 +92,9 @@ function App() {
             <Footer />
           </div>
         } />
-      <Route path="/upcoming" element={<Upcoming />} />
+        <Route path="/upcoming" element={<Upcoming />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   )

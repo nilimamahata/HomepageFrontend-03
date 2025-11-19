@@ -1,6 +1,9 @@
 import '../css/LandingHeader.css';
+import { useNavigate } from 'react-router-dom';
 
 const LandingHeader = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="landing-header">
       <div className="search-section">
@@ -12,8 +15,8 @@ const LandingHeader = () => {
       </div>
       {/* Login and Signup Buttons */}
       <div className="auth-buttons">
-          <button className="login-btn">Login</button>
-          <button className="signup-btn">Signup</button>
+          <button className="login-btn"onClick={() => navigate('/login')}>Login</button>
+          <button className="signup-btn"onClick={() => navigate('/signup')}>Signup</button>
       </div>
       {/*<div className="header-icons">
         <button className="icon-btn" aria-label="Accessibility">
